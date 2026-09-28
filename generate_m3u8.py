@@ -2,7 +2,6 @@ import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
 
-# Danh sách từ khóa tìm kiếm cho từng giải đấu
 LEAGUES = {
     "Premier League": {"query": "site:youtube.com Premier League Highlights", "logo": "https://i.imgur.com/2Xy5k8E.png"},
     "La Liga": {"query": "site:youtube.com La Liga Highlights", "logo": "https://i.imgur.com/R3Z5k8E.png"},
@@ -15,7 +14,6 @@ LEAGUES = {
 def get_highlights_rss(query, limit=3):
     encoded_query = urllib.parse.quote(query)
     rss_url = f"https://news.google.com/rss/search?q={encoded_query}&hl=en-US&gl=US&ceid=US:en"
-    
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
     videos = []
     
@@ -38,10 +36,12 @@ def get_highlights_rss(query, limit=3):
     return videos
 
 def generate_m3u8():
-    # Cấu hình Header m3u8 chuẩn Live Stream HLS
+    # Cấu hình Header m3u8 chuẩn Live Stream (Xóa bỏ thanh Seekbar thời gian)
     m3u8_content = "#EXTM3U\n"
     m3u8_content += "#EXT-X-VERSION:3\n"
-    m3u8_content += "#EXT-X-INDEPENDENT-SEGMENTS\n"
+    m3u8_content += "#EXT-X-PLAYLIST-TYPE:EVENT\n"
+    m3u8_content += "#EXT-X-TARGETDURATION:0\n"
+    m3u8_content += "#EXT-X-MEDIA-SEQUENCE:0\n"
     m3u8_content += "#EXTVLCOPT:http-user-agent=Mozilla/5.0\n\n"
     
     total_videos = 0
@@ -52,16 +52,25 @@ def generate_m3u8():
 
         if videos:
             for video in videos:
-                # Cấu hình #EXTINF:0 (thời lượng = 0) để ép trình phát nhận diện luồng 🔴 LIVE (0:00 / 0:00)
-                m3u8_content += f'#EXTINF:0 tvg-logo="{info["logo"]}" group-title="{league_name}", 🔴 LIVE | {video["title"]}\n'
-                m3u8_content += f'{video["url"]}\n\n'
+                # Ép thời lượng về -1 và nhúng thẻ live-stream
+                m3u8_content += f'#EXTINF:-1 tvg-logo="{info["logo"]}" group-title="{league_name}" radio="true", 🔴 LIVE | {video["title"]}\n'
+                
+                # Chuyển đổi link YouTube sang định dạng stream embed trực tiếp cho trình phát
+                raw_url = video["url"]
+                if "watch?v=" in raw_url:
+                    video_id = raw_url.split("watch?v=")[1].split("&")[0]
+                    stream_url = f"https://www.youtube.com/embed/{video_id}?autoplay=1"
+                else:
+                    stream_url = raw_url
+                    
+                m3u8_content += f'{stream_url}\n\n'
                 total_videos += 1
 
     output_file = "highlight_football.m3u8"
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(m3u8_content)
 
-    print(f"\n[✓] Hoàn tất! Đã cập nhật {total_videos} kênh Live vào file {output_file}")
+    print(f"\n[✓] Đã tạo thành công {total_videos} kênh Live chuẩn HLS!")
 
 if __name__ == "__main__":
     generate_m3u8()
