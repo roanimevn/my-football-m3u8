@@ -1,59 +1,61 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-INDEPENDENT-SEGMENTS
+#EXT-X-PLAYLIST-TYPE:EVENT
+#EXT-X-TARGETDURATION:0
+#EXT-X-MEDIA-SEQUENCE:0
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="Premier League", 🔴 LIVE | Premier League Moments That Get More And More Clutch
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="Premier League" radio="true", 🔴 LIVE | Premier League Moments That Get More And More Clutch
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE9hci1vVzVJOF9lZ1dJbW9JZmNkNWpNTGV5WjVEUlRmRXA0RWxWYUlKbzJqcGdLZUxvT2lnX01kSkdIa1JlX3NJc2JMV1AzNjU2TXRiVGxB?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="Premier League", 🔴 LIVE | HIGHLIGHTS: Cavalry FC vs. FC Supra du Québec | September 25, 2026
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="Premier League" radio="true", 🔴 LIVE | HIGHLIGHTS: Cavalry FC vs. FC Supra du Québec | September 25, 2026
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NQmZaaUtJUHVJeTVOb2cxQUNlVk5ueHhUd2hkUUJXMkRKM1NyUVVQLVc1cDBvTDdibnNmUWp4dG9XbTMyMy15cmdhY2wybW40c1hmNTdn?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="Premier League", 🔴 LIVE | WHAT A GAME! | Rochdale v Liverpool U21 Extended Highlights
-https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JS0V2dGFrdFR5YTJWeWZKWEZoMWFWZ1FmNTlua01ON0k2X1Z4TnlvUjMycDN5NGJpZnZLcHEtZXF4R05LWmFaMW5scFk1YnN2NEdGUjN3?oc=5
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="Premier League" radio="true", 🔴 LIVE | RECORD-BREAKING DISPLAY! 🇦🇺 | 2026 Dabble Darts ANZ Premier League | Night One Highlights
+https://news.google.com/rss/articles/CBMiVkFVX3lxTE5JWUU2SDlFNUhKQWpGSmJoYmpJZm5wRXJHeTNGa1dfVUVFckNHWURZbHJBell5RVk2U2FVNHZVZzFuZUw4T2FWcW5hN1RKVWNPYUlYZTln?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="La Liga", 🔴 LIVE | Italy vs Belgium Highlights ⚽ UEFA Nations League
+#EXTINF:-1 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="La Liga" radio="true", 🔴 LIVE | Italy vs Belgium Highlights ⚽ UEFA Nations League
 https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQbmdSZUt3aHdFRTdQYVROcEMyQ2pXOW5fV3F0MzN3VFhiQ0dqellXZ19fMEJvZTItVXM2QUp1eWpFelpxdmNqODJWdUJjNWxyZzBCVTBB?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="La Liga", 🔴 LIVE | Woodwork from Lamine Yamal 🪵😱 #shorts #fcbarcelona #laligahighlights
+#EXTINF:-1 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="La Liga" radio="true", 🔴 LIVE | Woodwork from Lamine Yamal 🪵😱 #shorts #fcbarcelona #laligahighlights
 https://news.google.com/rss/articles/CBMiVEFVX3lxTE5NSnkxeFdwMTNqVC1hWVluT1h5WDR3aHhONjZPbDQ5NlRKWHEybWZwc0pKMUpkXzMyb3VaS0xsUGJzbUw3UTlpSHhfRDVjVUF1aXY2SA?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="La Liga", 🔴 LIVE | Turkey vs France 0-1 • Mbappe Goal & Injury - Highlights Uefa Nations League
+#EXTINF:-1 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="La Liga" radio="true", 🔴 LIVE | Turkey vs France 0-1 • Mbappe Goal & Injury - Highlights Uefa Nations League
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE5sTW91S1c0ckRDMmt5U0Q0Tk9xMWZPeWd4V3JoNTU1YkRwcGxINXNUOWtNS01NSGkxMzNXLUNieVU3MVZXcGJDQnZQRkNmUERkNUhNVENn?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="Bundesliga", 🔴 LIVE | THE GREATEST 9 MINUTES IN BUNDESLIGA HISTORY - UNCUT 🎬 | Robert Lewandowski 5 Goals
+#EXTINF:-1 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="Bundesliga" radio="true", 🔴 LIVE | THE GREATEST 9 MINUTES IN BUNDESLIGA HISTORY - UNCUT 🎬 | Robert Lewandowski 5 Goals
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE4tcnI0Nlp1ZENwM09sdS1yYmlleUNhMjFrS25EZ0xmdVlXaFVmY0VnUXRxVTlDa1BoLTJZdFluUFk5OHNoUVpQejRFZWJPOEZpRWNNVTl3?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="Bundesliga", 🔴 LIVE | Norway vs Portugal | UEFA Nations League | Highlights
+#EXTINF:-1 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="Bundesliga" radio="true", 🔴 LIVE | Norway vs Portugal | UEFA Nations League | Highlights
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE4yby1UZnFDcnE3Uk5ZRkY2VGVfTWVXUkNfVW5LWUVYX29OMXNMMUc1dDduMzFRRm1WeVdhU1FQRVBkSHVYcUQ0MVFzbFlvY1NxS2I5LUVB?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="Bundesliga", 🔴 LIVE | DAZN Football
+#EXTINF:-1 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="Bundesliga" radio="true", 🔴 LIVE | DAZN Football
 https://news.google.com/rss/articles/CBMiTkFVX3lxTE5kR29fOUU1X2FaT2tWS3lTZG41ME5haWNYQkQ3V21uQ1I5VjhPV25YVVgxSnV3SWxraWQtLUtZWTNlbC1BQy1hb3ZUaDdRZw?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/M5Z5k8E.png" group-title="Serie A", 🔴 LIVE | COMEBACK WIN! Redondo, Godø & Chiba | Juventus Women 3-1 Napoli Women | Serie A Highlights
+#EXTINF:-1 tvg-logo="https://i.imgur.com/M5Z5k8E.png" group-title="Serie A" radio="true", 🔴 LIVE | COMEBACK WIN! Redondo, Godø & Chiba | Juventus Women 3-1 Napoli Women | Serie A Highlights
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wQUZhQkJxNERKNGZLbWs1Qnh2R0xtOWx2V1VqNGpqM2ZFMWU4MnJ4a3Y0V3NMNDVTSjU0QUlTZUNqZHozTkZoZkg0bm9vQWlhcGowS0NR?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/M5Z5k8E.png" group-title="Serie A", 🔴 LIVE | THE BEST OF JUVENTUS MOMENTS | Serie A Highlights
+#EXTINF:-1 tvg-logo="https://i.imgur.com/M5Z5k8E.png" group-title="Serie A" radio="true", 🔴 LIVE | THE BEST OF JUVENTUS MOMENTS | Serie A Highlights
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TTEFaUGh3eHlwb1ktanR3d2JRSFd0SWZIakI1VzZ0UldmUkFFcy1nd3Y1eXJKQXVYZ29lZ2ktLVl0Z0UzckpqTkxzTU9qT1ptajJDWmJn?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/M5Z5k8E.png" group-title="Serie A", 🔴 LIVE | COMO-PARMA 2-1 | EXTENDED HIGHLIGHTS | SERIE A 2026/27
+#EXTINF:-1 tvg-logo="https://i.imgur.com/M5Z5k8E.png" group-title="Serie A" radio="true", 🔴 LIVE | COMO-PARMA 2-1 | EXTENDED HIGHLIGHTS | SERIE A 2026/27
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wVTlkcnRmcldFZDBybGh2ZHY5OXJnVjktUDdEdFMtUU1CUjZuck5nY2tHNjRXLUY2THlVbVJUdF9veDUzN1VhcS1TaUdQeC1kaFZNcjh3?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/L6Z5k8E.png" group-title="UEFA Champions League", 🔴 LIVE | England v Spain | Classic Nations League Highlights
+#EXTINF:-1 tvg-logo="https://i.imgur.com/L6Z5k8E.png" group-title="UEFA Champions League" radio="true", 🔴 LIVE | England v Spain | Classic Nations League Highlights
 https://news.google.com/rss/articles/CBMiVkFVX3lxTFBHM2hVMnNvUWczMVY2Q3NndDlhNFBpLWdKQ0FvXzJYOUJ0T29HQlVGclpfRDRzZmJUSUVGWG9PMkhzbU5WWmlRTUJkTWpGS0xka2dBRndn?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/L6Z5k8E.png" group-title="UEFA Champions League", 🔴 LIVE | Norway vs Portugal | UEFA Nations League | Highlights
+#EXTINF:-1 tvg-logo="https://i.imgur.com/L6Z5k8E.png" group-title="UEFA Champions League" radio="true", 🔴 LIVE | Norway vs Portugal | UEFA Nations League | Highlights
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE4yby1UZnFDcnE3Uk5ZRkY2VGVfTWVXUkNfVW5LWUVYX29OMXNMMUc1dDduMzFRRm1WeVdhU1FQRVBkSHVYcUQ0MVFzbFlvY1NxS2I5LUVB?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/L6Z5k8E.png" group-title="UEFA Champions League", 🔴 LIVE | Netherlands v Germany | Classic Nations League Highlights
+#EXTINF:-1 tvg-logo="https://i.imgur.com/L6Z5k8E.png" group-title="UEFA Champions League" radio="true", 🔴 LIVE | Netherlands v Germany | Classic Nations League Highlights
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE8xX0Z5WUxScGZ4dnRYbGZnYTRncFZld3VBQmdVWkZOZWxtSjVtQUJ2X0pteG1yME83dE9ZeTdWRUFhWFBpckFPSGxNcnI3SlhjaFBQSHln?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/P7Z5k8E.png" group-title="MLS", 🔴 LIVE | Messi MAGICAL FREE KICK GOLAZO!
+#EXTINF:-1 tvg-logo="https://i.imgur.com/P7Z5k8E.png" group-title="MLS" radio="true", 🔴 LIVE | Messi MAGICAL FREE KICK GOLAZO!
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE1rVXJjY1MzMkNfSHpWQ21QWEhnNm1VRkxkVkE4czNrUU5iWXZ2VlY4aXB5Mk5ldmNMM1V6ZFlrZVp1cTdmSV9aU3dtLVQzdVRqSTZjeWFR?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/P7Z5k8E.png" group-title="MLS", 🔴 LIVE | WHAT A HIT! Thomas Müller smashed in the GO-AHEAD GOAL!
+#EXTINF:-1 tvg-logo="https://i.imgur.com/P7Z5k8E.png" group-title="MLS" radio="true", 🔴 LIVE | WHAT A HIT! Thomas Müller smashed in the GO-AHEAD GOAL!
 https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3V3dOb0JydlMyODV2MzhSVmx6dElBRmt2aWo5TUZMcXFmNTExYWJPcVhqUEhMTkZvOHo4czVnOXpaNGM4bWtWS2s3U0lmLXVUVDR4OEVB?oc=5
 
-#EXTINF:0 tvg-logo="https://i.imgur.com/P7Z5k8E.png" group-title="MLS", 🔴 LIVE | Columbus Crew vs. Inter Miami CF | Full Match Highlights | STUNNING Messi FREE KICK & LATE WINNER!
+#EXTINF:-1 tvg-logo="https://i.imgur.com/P7Z5k8E.png" group-title="MLS" radio="true", 🔴 LIVE | Columbus Crew vs. Inter Miami CF | Full Match Highlights | STUNNING Messi FREE KICK & LATE WINNER!
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE9yeDdHODU2Vm92MUdsX2RXZ1pwaVF4aXpCZ1hDcHV2Tm43VWN1T2xHbFRWR3RwZm5xb1U2bEpaSlZ4eHNabUFjV3NkV2NLLWFjbU8yS1Jn?oc=5
 
