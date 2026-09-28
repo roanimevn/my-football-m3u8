@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trực Tiếp Highlight Bóng Đá</title>
+    <!-- Nhúng CSS riêng -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Thư viện HLS.js -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+    <div class="player-container">
+        <!-- Nhãn LIVE -->
+        <div class="live-badge">
+            <div class="live-dot"></div> 🔴 LIVE
+        </div>
+        
+        <!-- Trình phát Video -->
+        <video id="video" controls autoplay muted></video>
+    </div>
+
+    <!-- Nhúng Javascript riêng -->
+    <script src="app.js"></script>
+</body>
+</html>
