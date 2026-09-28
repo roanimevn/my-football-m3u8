@@ -1,62 +1,67 @@
-import os
-from googleapiclient.discovery import build
+import urllib.request
+import urllib.parse
+import xml.etree.ElementTree as ET
 
-YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
-
+# Danh sách từ khóa tìm kiếm cho từng giải đấu
 LEAGUES = {
-    "Premier League": {"channel_id": "UCNAf1k0yIjyGu3k9BwAg3LG", "logo": "https://i.imgur.com/2Xy5k8E.png"},
-    "La Liga": {"channel_id": "UC14UlmYlSNiQCcq9mWb72vg", "logo": "https://i.imgur.com/R3Z5k8E.png"},
-    "Bundesliga": {"channel_id": "UC6UL29enLNe4xmWfU43qEag", "logo": "https://i.imgur.com/K4Z5k8E.png"},
-    "Serie A": {"channel_id": "UCBJeMCIe9X5aL12cv5ekkgA", "logo": "https://i.imgur.com/M5Z5k8E.png"},
-    "UEFA Champions League": {"channel_id": "UCfh1019X3q0iE1YvLw_2Cvg", "logo": "https://i.imgur.com/L6Z5k8E.png"},
-    "MLS": {"channel_id": "UC2K3J2_m04xJp85u23E0aTQ", "logo": "https://i.imgur.com/P7Z5k8E.png"}
+    "Premier League": {"query": "site:youtube.com Premier League Highlights", "logo": "https://i.imgur.com/2Xy5k8E.png"},
+    "La Liga": {"query": "site:youtube.com La Liga Highlights", "logo": "https://i.imgur.com/R3Z5k8E.png"},
+    "Bundesliga": {"query": "site:youtube.com Bundesliga Highlights", "logo": "https://i.imgur.com/K4Z5k8E.png"},
+    "Serie A": {"query": "site:youtube.com Serie A Highlights", "logo": "https://i.imgur.com/M5Z5k8E.png"},
+    "UEFA Champions League": {"query": "site:youtube.com Champions League Highlights", "logo": "https://i.imgur.com/L6Z5k8E.png"},
+    "MLS": {"query": "site:youtube.com MLS Highlights", "logo": "https://i.imgur.com/P7Z5k8E.png"}
 }
 
-def get_latest_videos(youtube, channel_id, max_results=3):
+def get_highlights_rss(query, limit=3):
+    encoded_query = urllib.parse.quote(query)
+    rss_url = f"https://news.google.com/rss/search?q={encoded_query}&hl=en-US&gl=US&ceid=US:en"
+    
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
     videos = []
+    
     try:
-        request = youtube.search().list(
-            part="snippet",
-            channelId=channel_id,
-            order="date",
-            type="video",
-            maxResults=max_results
-        )
-        response = request.execute()
-
-        for item in response.get("items", []):
-            title = item["snippet"]["title"]
-            video_id = item["id"]["videoId"]
-            if video_id:
-                url = f"https://www.youtube.com/watch?v={video_id}"
-                videos.append({"title": title, "url": url})
+        req = urllib.request.Request(rss_url, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as response:
+            xml_data = response.read()
+            root = ET.fromstring(xml_data)
+            
+            for item in root.findall('.//item')[:limit]:
+                title = item.find('title').text
+                if " - " in title:
+                    title = title.rsplit(" - ", 1)[0]
+                
+                link = item.find('link').text
+                videos.append({"title": title, "url": link})
     except Exception as e:
-        print(f"[-] Lỗi khi gọi API cho channel {channel_id}: {e}")
+        print(f"[-] Lỗi cào dữ liệu cho query '{query}': {e}")
+        
     return videos
 
 def generate_m3u8():
-    if not YOUTUBE_API_KEY:
-        print("[!] Không tìm thấy YOUTUBE_API_KEY trong Secrets.")
-        return
-
-    youtube = build("youtube", "v3", developerKey=YOUTUBE_API_KEY)
-    m3u8_content = "#EXTM3U\n#EXTVLCOPT:http-user-agent=Mozilla/5.0\n\n"
+    # Cấu hình Header m3u8 chuẩn Live Stream HLS
+    m3u8_content = "#EXTM3U\n"
+    m3u8_content += "#EXT-X-VERSION:3\n"
+    m3u8_content += "#EXT-X-INDEPENDENT-SEGMENTS\n"
+    m3u8_content += "#EXTVLCOPT:http-user-agent=Mozilla/5.0\n\n"
+    
     total_videos = 0
 
     for league_name, info in LEAGUES.items():
-        print(f"[+] Đang lấy video: {league_name}...")
-        videos = get_latest_videos(youtube, info["channel_id"], max_results=3)
+        print(f"[+] Đang xử lý: {league_name}...")
+        videos = get_highlights_rss(info["query"], limit=3)
 
-        for video in videos:
-            m3u8_content += f'#EXTINF:-1 tvg-logo="{info["logo"]}" group-title="{league_name}", {video["title"]}\n'
-            m3u8_content += f'{video["url"]}\n\n'
-            total_videos += 1
+        if videos:
+            for video in videos:
+                # Cấu hình #EXTINF:0 (thời lượng = 0) để ép trình phát nhận diện luồng 🔴 LIVE (0:00 / 0:00)
+                m3u8_content += f'#EXTINF:0 tvg-logo="{info["logo"]}" group-title="{league_name}", 🔴 LIVE | {video["title"]}\n'
+                m3u8_content += f'{video["url"]}\n\n'
+                total_videos += 1
 
     output_file = "highlight_football.m3u8"
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(m3u8_content)
 
-    print(f"\n[✓] Hoàn tất! Đã lưu {total_videos} video vào file {output_file}")
+    print(f"\n[✓] Hoàn tất! Đã cập nhật {total_videos} kênh Live vào file {output_file}")
 
 if __name__ == "__main__":
     generate_m3u8()
