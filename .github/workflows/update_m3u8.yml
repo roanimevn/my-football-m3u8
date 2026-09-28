@@ -1,0 +1,52 @@
+name: Auto Update M3U8 Playlist
+
+on:
+  schedule:
+    # Chạy tự động lúc 00:00 UTC mỗi ngày (tương đương 07:00 AM giờ Việt Nam)
+    # Cú pháp Cron: Minute Hour Day-of-month Month Day-of-week
+    - cron: '0 0 * * *'
+  # Cho phép kích hoạt chạy bằng tay từ giao diện GitHub
+  workflow_dispatch:
+
+jobs:
+  build-and-update:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Cấp quyền ghi commit vào Repository
+
+    steps:
+      # 1. Checkout mã nguồn về máy ảo GitHub Runner
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Thiết lập môi trường Python
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      # 3. Cài đặt các thư viện phụ thuộc
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Chạy script Python tạo file M3U8
+      - name: Run Python script
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python generate_m3u8.py
+
+      # 5. Commit và Push file M3U8 mới lên GitHub nếu có sự thay đổi
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add highlight_football.m3u8
+          if git diff --staged --quiet; then
+            echo "Không có thay đổi mới trong file M3U8."
+          else
+            git commit -m "auto: Cập nhật playlist M3U8 mới nhất [skip ci]"
+            git push
+          fi
