@@ -5,8 +5,8 @@
 #EXT-X-MEDIA-SEQUENCE:0
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="FPT Play Sports" radio="true", 🔴 LIVE | HIGHLIGHT ANH - TÂY BAN NHA: KỊCH BẢN KHÓ TIN, THẾ TRẬN CỐNG HIẾN | NATIONS LEAGUE 26-27
-https://news.google.com/rss/articles/CBMiVkFVX3lxTE1QZWpzSWxLZUlxMHhkcUpyRk5OMHdrb0dueDg3Qjg1TnBnWlFETkRCLXcxakFnMEhRbTA2eGlaaGktWG9OWlhLNC0xaWZlVVY1Wi1QekZR?oc=5
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="FPT Play Sports" radio="true", 🔴 LIVE | HIGHLIGHT ATLETICO MADRID - MAN UNITED: PHONG ĐỘ CHẠM ĐÁY, TINH THẦN RỆU RÃ | CHAMPIONS LEAGUE 26-27
+https://news.google.com/rss/articles/CBMiVkFVX3lxTE1JZjgwbGpkRmdmVk5CZlloakx3RWpyQ21tZTBSRUNZc2ZqdUlkdnNYZ3FvaFVxVkVMUE02RmxScF9HMldxeUV6X0M4NjIta1FSTmtGSG1n?oc=5
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="FPT Play Sports" radio="true", 🔴 LIVE | HIGHLIGHT BAYERN MUNICH - HÀNH TRÌNH CHAMPIONS LEAGUE 23/24 | FPT BÓNG ĐÁ
 https://news.google.com/rss/articles/CBMiVkFVX3lxTE1YQUFLb0Z1ZkhnQ0ZnSFV5RlJic1JNU3dkYm5JRWVwblZwMms3YzZaZDA2S3NqX1E3MmY0YnJSNmVrdVpKUmg4RVFZM0VMdkRxRnZiVi1R?oc=5
@@ -20,20 +20,11 @@ https://news.google.com/rss/articles/CBMiVkFVX3lxTE5FV3BlWWRZSkNqLWJmQ0d4ZmF6ZEl
 #EXTINF:-1 tvg-logo="https://i.imgur.com/2Xy5k8E.png" group-title="FPT Play Sports" radio="true", 🔴 LIVE | HIGHLIGHT VINICIUS - CẦU THỦ XUẤT SẮC NHẤT CHAMPIONS LEAGUE 23/24 | FPT BÓNG ĐÁ
 https://news.google.com/rss/articles/CBMiVkFVX3lxTFBhbExLc1hURG5wekg2T3l2dDVScExTZFZNSk4wMVB4d1loOXl5Y3dXUUNmN1pkWDhjaktYb2hWdXF5VWlGMTRzeFF5elFxdUlDVURIMF9n?oc=5
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="TV360 Thể Thao" radio="true", 🔴 LIVE | Khoảnh khắc xúc động của trận đấu 🥹 #tv360 #tv360thethao #xemtheocachcuaban #highlights
-https://news.google.com/rss/articles/CBMiVEFVX3lxTE5pWGtfR29wdVVZc01TZjBJaGhBbDc4NUw1c0IydXJLcGlqSi1STXAzcUVaei1OMHBVM2t0VnBvY2dLYTFOelNJajRoSjNLcWFsVG1VUw?oc=5
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="TV360 Thể Thao" radio="true", 🔴 LIVE | 41 tuổi nhưng cụ Chanh vẫn còn nét lắm 😎 👏 #tv360thethao #tv360 #reels #highlights #highlight
-https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zUERJZFVwX09xZEw0TWlQcVR3S0E2LVZHMHpfclhrX1hqdll0OFNScFViX1hKRmJfOWhtNjFPSnBXWWZZWTJXWUt1Zi1oMHRoc0xyYQ?oc=5
+#EXTINF:-1 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="TV360 Thể Thao" radio="true", 🔴 LIVE | HIGHLIGHT PHÁP - ANH: ĐẠI TIỆC THỊNH SOẠN, MÃN NHÃN VỚI 10 BÀN THẮNG | WORLD CUP 2026
+https://news.google.com/rss/articles/CBMifEFVX3lxTFBaRmJiYmtGV09CT3ZNX1ZKUkF1QW1pV0w2eGh2U2t1YzNoNDZZNDNwZDFySVItZGpvNklBSTVnM2lkTTFJOXhQQ1U3SFlfX1VDRG5ReFJ4NTRUUU5QQkZaU0NCRlhtYktVelpKUWRQd2ZjWnpDeXdWMWRXMXI?oc=5
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="TV360 Thể Thao" radio="true", 🔴 LIVE | 39 tuổi mà Messi bứt tốc nhanh cỡ này 😳 #tv360 #tv360thethao #xemtheocachcuaban #highlights
 https://news.google.com/rss/articles/CBMiVEFVX3lxTE5laExsSFM1emowV0ZybjZFaTVKVE12cGtCcVBIN0lvWFNEelUtV2FIOUo1ZXNNUnROd19KR1pQQXFLNFRzRk1rNUxpd3hjV25Bb0lsUw?oc=5
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="TV360 Thể Thao" radio="true", 🔴 LIVE | Á à bắt được một Ricon 🤣#nationsleague #tv360 #tv360thethao #xemtheocachcuaban #highlight
-https://news.google.com/rss/articles/CBMiVEFVX3lxTE41YlM0R1N2dkJLcTZydmtiY2dIeWpJUjkzZlNJWl81RWdDU0hpbkdFcjhVUk9CRWhFLTliZzBhUEhKNm1SNnVVdHpScmpyTXF0eHdiNQ?oc=5
-
-#EXTINF:-1 tvg-logo="https://i.imgur.com/R3Z5k8E.png" group-title="TV360 Thể Thao" radio="true", 🔴 LIVE | Indonesia tạo ra khá nhiều cơ hội nhưng vẫn chưa thể ghi được bàn #tv360 #tv360thethao #highlights
-https://news.google.com/rss/articles/CBMiVEFVX3lxTE9kR0Y1QkNqaHVFa1pIMXY0RzFUX3lYTy1LaDFaX2xFblpRX2JWOWNMWldZNDZVcjJXMDdwSlZncF94dzFYS05QUkl3RVNCWmVHa3dyVQ?oc=5
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="MyTV Bóng Đá" radio="true", 🔴 LIVE | Highlight MyTV HSB 2025
 https://news.google.com/rss/articles/CBMifEFVX3lxTE5WZWZjdHg0WkpsSFFjZWRPcVIyaWJiR0lzZUxaY0x0RU9TQXlsR3c1ekdVSFVBWUdqZHQzUW1HQkRmbWZMNmxSQnRaclhSY3dNejloR1F2MmRoaFd5M2ljZGlhUnBjQkFzS3VRaXVDNEI4ME9EWnpmaGV2eFY?oc=5
@@ -44,11 +35,11 @@ https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Ockg4SURzTVREM3Rlajl6UlVaQkF
 #EXTINF:-1 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="MyTV Bóng Đá" radio="true", 🔴 LIVE | Garnacho, Mainoo RỰC SÁNG, Man United khiến Man City BỐI RỐI tại CHUNG KẾT FA Cup | HIGHLIGHT HIỆP 1
 https://news.google.com/rss/articles/CBMiVkFVX3lxTFBmamhfZ0NSeU5pclk0RUo1alpUR1Y1LVlTUTlzVXlEMkNUR1RNVTlyWEpqb0dVM2VPSUd2NHhFNmRXRUNxeVlaQk9nRlk4LXRqcGoxY1J3?oc=5
 
-#EXTINF:-1 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="MyTV Bóng Đá" radio="true", 🔴 LIVE | #HIGHLIGHT : SƠN ĐỘNG FC vs POEM FC
-https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Qd2VzOWI5NG10UHJfd0JNa211X0RfYXNkLWZCbm90SlBUdmZmUURPbE9qTUJTaTgtMjg2eklIWTNzZ2MzNXlYUHZLbm1udkU0VnJydXhR?oc=5
-
 #EXTINF:-1 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="MyTV Bóng Đá" radio="true", 🔴 LIVE | HIGHLIGHT MAN CITY - CHELSEA: Nicolas Jackson CHÂN GỖ, Bernado Silva hóa NGƯỜI HÙNG | Bán kết FA Cup
 https://news.google.com/rss/articles/CBMiVkFVX3lxTFB6Y3EyV2gwQ05zeTB6U0dGdUs5MHRja1dtWTN1V2I0aGVGQW9MNHNfYW5FekJEd2xadEg1UTV2ZDBPbEtTQnNQb0ljSW5yNWd2REJKTVdn?oc=5
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/K4Z5k8E.png" group-title="MyTV Bóng Đá" radio="true", 🔴 LIVE | HIGHLIGHTS MyTV HSB 2023: THPT Chuyên Hà Nội Amsterdam vs THPT Việt Úc Hà Nội
+https://news.google.com/rss/articles/CBMiVkFVX3lxTE42R1NaNXdORkJ5eXkzYWN6YVFGUk9FSHp3eUxiT1VHTmM2UzAydk1sc0dfeXhwRmVPNFcwOXNFa21sTGZXckdfNDBwWlRhVHFERk55ZUZR?oc=5
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/L6Z5k8E.png" group-title="FIFA Official Highlights" radio="true", 🔴 LIVE | HIGHLIGHTS FIFA ASEAN CUP 2026
 https://news.google.com/rss/articles/CBMiYEFVX3lxTE1IY1NQUWRkR3lGQzF4Q0dYRE41eHBuTktmcDZJckNXUzN3X1dSM1hfc2pfd1l6SklkVFFGbTlqUjA5THZsbjY0NW5zVnhKazVWb21pcW9nTnh4VTg4dFV6NA?oc=5
